@@ -7,12 +7,13 @@ const r1 = readline.createInterface({
 console.log('Welcome to JavaScript Calculator Unit testing using Node.js')
 r1.question('Enter first number: ', x => {
     r1.question('Enter second number: ', y => {
-        r1.question(`Select operation:,
+        r1.question(`Select operation:
         1 - Add
         2 - Subtract
         3 - Multiply
         4 - Integer Divide 
-        5 - Special operation :`, choice => {
+        5 - Special operation : 
+        Enter selection: `, choice => {
             if(!operations.validateNumbers(x, y)) {
                 console.log("Only numbers are allowed, please restart program")
             } 
